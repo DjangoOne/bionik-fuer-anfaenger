@@ -1,0 +1,72 @@
+<!--
+    Bionik und so.
+    © 2016 - Elias Gürlich
+-->
+<html xmlns:ng="http://angularjs.org" id="ng-app" ng-app="bionikApp">
+
+<head>
+	<title>Bionik für Anfänger]</title>
+
+	<!-- Individuelles Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+	<!-- jQuery -->
+	<!-- jquery.js (Google APIs, komprimiert) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<!-- Materialize -->
+	<!-- materialize.css (CDN, komprimiert) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+	<!-- materialize.js (CDN, komprimiert) -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+
+	<!-- AngularJS -->
+	<!-- angular.js (Google APIs, komprimiert) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	<!-- angular-route.js (Google APIs, komprimiert) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.min.js"></script>
+
+	<!-- MVC-Skripte -->
+	<!-- controller.js (Controller-Skript, nicht komprimiert) -->
+	<script src="js/controllers.js" type="text/javascript"></script>
+	<!-- main.js (Routing-Skript, nicht komprimiert) -->
+	<script src="js/main.js" type="text/javascript"></script>
+
+</head>
+
+<body class="green lighten-5">
+	<div class="navbar-fixed">
+		<nav class="deep-orange darken-3">
+			<div class="nav-fixed">
+				<a href="#/home" class="brand-logo" style="margin-left:20px">Bionik für Anfänger</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="#/quickstart">Schnellstart</a>
+					</li>
+					<li><a href="#/anwendung">Anwendungsbeispiele</a>
+					</li>
+					<li><a href="#/herangehensweise">Herangehensweisen</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div id="content" ng-view></div>
+	<footer class="page-footer" id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Bionik für Anfänger</h5>
+					<p class="grey-text text-lighten-4">Entstanden im Rahmen des naturwissenschaftlichen Profilunterrichtes am Hans-Erlwein-Gymnasium Dresden.</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2016 Elias Gürlich
+				<a class="grey-text text-lighten-4 right" href="#/impressum">Impressum</a>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
